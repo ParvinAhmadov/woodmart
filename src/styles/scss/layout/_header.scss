@@ -1,0 +1,249 @@
+@use "../utils/variable" as *;
+
+.general-header {
+  padding: 0% 10%;
+
+  .general-header-container {
+    border-bottom: 2px solid black;
+    border-left: 10px;
+
+    .general-header-location {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .general-header-navigation {
+        display: flex;
+        align-items: center;
+        color: #777777;
+        width: 434px;
+        height: 88px;
+        position: relative;
+
+        ul {
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          list-style: none;
+          margin-top: 10px;
+          li:first-child {
+            margin-top: 6%;
+            .hover-div {
+              height: 25px;
+            }
+            &:hover .hover-content {
+              display: flex;
+            }
+            .hover-content {
+              position: absolute;
+              margin-top: -1%;
+              height: 165px;
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+              padding: 5% 8%;
+              background-color: white;
+              display: none;
+              box-shadow: 0px 0px 1px rgb(0, 0, 0);
+              animation: hovermove 1s ease-in-out;
+              z-index: 100;
+
+              .hover-cards {
+                width: 206px;
+                height: 67px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover img {
+                  transform: scale(0.9);
+                  transition: transform 0.3s ease;
+                }
+                @keyframes hovermove {
+                  0% {
+                    transform: translateY(0);
+                  }
+                  100% {
+                    transform: translateY(-5px);
+                  }
+                }
+
+                .hover-img {
+                  img {
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                  }
+                }
+                .hover-text {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  font-weight: 600;
+
+                  p {
+                    margin: 0px 5px;
+                    color: black;
+                  }
+                }
+              }
+            }
+          }
+          li:first-child a i {
+            font-size: 10px;
+            margin-left: 5px;
+            color: rgb(192, 191, 191);
+          }
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+      .general-header-img {
+        display: flex;
+        align-items: center;
+        width: 240px;
+        height: 88px;
+        font-size: 16px;
+        img {
+          padding: 5px 0px;
+          width: 220px;
+          height: 47px;
+        }
+      }
+      .general-header-text {
+        width: 350px;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        align-items: center;
+        font-size: 16px;
+        .header-shooping-icon :last-child:hover {
+          cursor: pointer;
+          color: gray;
+        }
+        .first-text {
+          a {
+            padding: 0px 10px;
+            color: #333333;
+            text-decoration: none;
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+        .header-search-icon {
+          font-size: 19px;
+          i {
+            padding: 0px 10px;
+          }
+        }
+        .header-heart-icon {
+          font-size: 19px;
+
+          i {
+            padding: 0px 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.plants-menu {
+  padding: 0% 10%;
+  margin-top: 3%;
+
+  .plants-menu-content {
+    border-bottom: 2px solid $hovercolor;
+
+    display: flex;
+    width: 1369px;
+    height: 524px;
+    .plants-menu-left {
+      display: flex;
+      align-items: center;
+      width: 302px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        font-size: 30px;
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 40px;
+          color: #333333;
+          transition: 0.3s ease;
+          cursor: pointer;
+          &:hover{
+            color: $hovercolor;
+          }
+          i {
+            margin: 0px 0px 0px 10px;
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .plants-menu-right {
+      padding: 0px 15px;
+      width: 1065px;
+      height: 482px;
+      border-left: 2px solid $hovercolor;
+      
+      .swiper {
+        width: 100%;
+        height: 100%;
+        cursor: grab;
+
+        .swiper-content {
+          position: absolute;
+          transform: translateY(191%);        
+          color: white;
+          left: 4%;
+          h2 {
+            font-size: 36px;
+            font-weight: 900;
+          }
+          p {
+            color: #ffffffcc;
+          }
+          button{
+            padding: 5px 20px;
+            background-color: $hovercolor;
+            color: white;
+            border: none;
+            &:hover{
+              background-color:#3c430e;
+            }
+          }
+        }
+      .swipper-wrapper{
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        } 
+      }
+      }
+    }
+  }
+}

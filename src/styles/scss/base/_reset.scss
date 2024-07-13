@@ -1,0 +1,14 @@
+@use "../utils/variable" as *;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+body{
+    background-color: $bodybackground;
+
+}
+button{
+    cursor: pointer;
+}

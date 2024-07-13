@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../src/styles/scss/main.css">
+
+        <title>Document</title>
+        <script defer src="../src/scripts/main.js"></script>
+
+    </head>
+    <body>
+
+        <header class="general-header">
+            <div class="general-header-container">
+                <div class="general-header-location">
+                    <div class="general-header-navigation">
+                        <ul>
+                            <li><a href>Shop<i
+                                        class="fa-solid fa-chevron-down"></i></a>
+
+                                <div class="hover-div"></div>
+                                <div class="hover-content">
+                                    <div class="hover-cards">
+                                        <div class="hover-img">
+                                            <img
+                                                src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants.jpg.webp"
+                                                alt>
+                                        </div>
+                                        <div class="hover-text">
+                                            <p>Plants</p>
+                                            <span>25 products</span>
+                                        </div>
+                                    </div>
+                                    <div class="hover-cards">
+                                        <div class="hover-img">
+                                            <img
+                                                src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters.jpg.webp"
+                                                alt>
+                                        </div>
+                                        <div class="hover-text">
+                                            <p>Planters</p>
+                                            <span>25 products</span>
+                                        </div>
+                                    </div>
+                                    <div class="hover-cards">
+                                        <div class="hover-img">
+                                            <img
+                                                src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plant-care.jpg.webp"
+                                                alt>
+                                        </div>
+                                        <div class="hover-text">
+                                            <p>Plant care</p>
+                                            <span>25 products</span>
+                                        </div>
+                                    </div>
+                                    <div class="hover-cards">
+                                        <div class="hover-img">
+                                            <img
+                                                src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-gift-ideas.jpg.webp"
+                                                alt>
+                                        </div>
+                                        <div class="hover-text">
+                                            <p>Pet friendly</p>
+                                            <span>25 products</span>
+                                        </div>
+                                    </div>
+                                    <div class="hover-cards">
+                                        <div class="hover-img">
+                                            <img
+                                                src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-pet-friendly.jpg.webp"
+                                                alt>
+                                        </div>
+                                        <div class="hover-text">
+                                            <p>Gift ideas</p>
+                                            <span>25 products</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href>Blog</a></li>
+                            <li><a href>Care library</a></li>
+                            <li><a href>About us</a></li>
+                            <li><a href>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="general-header-img">
+                        <img
+                            src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/woodmart-plant-store-logo.svg"
+                            alt>
+                    </div>
+                    <div class="general-header-text">
+                        <div class="first-text">
+                            <a href>
+                                Login / Register</a>
+                        </div>
+                        <div class="header-search-icon"><i
+                                class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="header-heart-icon">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span>0</span>
+                        </div>
+
+                        <div class="header-shooping-icon">
+                            <span><i
+                                    class="fa-solid fa-bag-shopping"></i></span>
+                            <span>0 / $0.00</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <section class="plants-menu">
+            <!-- MAIN CONTENT AREA -->
+            <div class="plants-menu-content">
+                <div class="plants-menu-left">
+                    <ul>
+                        <li>Plants <i class="fa-solid fa-arrow-up"></i></li>
+                        <li>Planters <i class="fa-solid fa-arrow-up"></i></li>
+                        <li>Plant Care <i class="fa-solid fa-arrow-up"></i></li>
+                        <li>Gift ideas <i class="fa-solid fa-arrow-up"></i></li>
+                        <li>Pet friendly <i
+                                class="fa-solid fa-arrow-up"></i></li>
+                    </ul>
+                </div>
+                <div class="plants-menu-right">
+                    <div class="swiper menuSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-slide-1-opt-1.jpg"
+                                    alt>
+                                <div class="swiper-content">
+                                    <h2>We value fairness and strive <br> for
+                                        simple
+                                        products</h2>
+                                    <p>
+                                        Specially designed for shipping delicate
+                                        living plants, our
+                                        innovative <br>packaging ensures maximum
+                                        protection during
+                                        transit and results.
+                                    </p>
+                                    <button>Shop All</button>
+                                </div>
+                            </div>
+                            <div class="swiper-content">
+                                <h2>We value fairness and strive for simple
+                                    products</h2>
+                                <p>
+                                    Specially designed for shipping delicate
+                                    living plants, our
+                                    innovative <br> packaging ensures maximum
+                                    protection during
+                                    transit and results.
+                                </p>
+                                <button>Shop All</button>
+                            </div>
+
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <img
+                                src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-slide-2-opt.jpg"
+                                alt>
+                            <div class="swiper-slide">
+                                <img src="../src/assets/images/img2.jpg" alt />
+                                <div class="swiper-content">
+                                    <h2>
+                                        A large selection of plants, fertilizers
+                                        and accessories.
+                                    </h2>
+                                    <p>
+                                        A wonderful serenity has taken
+                                        possession of my entire soul,
+                                        like these sweet mornings of spring
+                                        which I enjoy with my
+                                        whole heart.
+                                    </p>
+                                    <button>Show All</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-slide-3-opt-1.jpg"
+                                    alt>
+                                <div class="swiper-content">
+                                    <h2>Come for the plants, stay for the
+                                        service plants.</h2>
+                                    <p>
+                                        We believe plants and people belong
+                                        together, but we know
+                                        that city life sometimes keeps us apart.
+                                        That’s why we set
+                                        out to reconnect people.
+                                    </p>
+                                    <button>Show this plant</button>
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <!-- <div class="swiper-button-next"></div>
+
+                        <div class="swiper-button-prev"></div> -->
+
+                    </div>
+
+                </div>
+            </section>
+            <div class="products-text">
+                <h3>Most popular products</h3>
+            </div>
+            <section class="products-menu">
+                <div class="swiper productsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div> -->
+                        <!-- <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div> -->
+                        <!-- <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products-swipper-btn">
+                                <button><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button>   <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                        <button>Delete</button>
+                            </div>
+                            <div class="products-img">
+                                <img
+                                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg"
+                                    alt />
+                        
+                            </div>
+                            <div class="products-content">
+                                <h3>Golden Petra</h3>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <span>$79.00</span>
+                                <button>
+                                    <span>Select options</span>
+                                    <p> <i class="fa-solid fa-cart-shopping"></i></p>
+                                </button>
+                            </div>
+
+                        </div> -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+
+        </section>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
