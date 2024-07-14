@@ -394,4 +394,64 @@ body {
 }
 .plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide .swiper-content button:hover {
   background-color: #3c430e;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+}
+.container #btn-create {
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: #5E6821;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container #btn-create:hover {
+  background-color: #3c430e;
+}
+.container #form_data {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.container #form_data #create_home {
+  background-color: #5E6821;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+  border-radius: 13px;
+  width: 100%;
+  margin-top: 10px;
+}
+.container #form_data input:focus {
+  border: 1px solid red;
+  outline: none;
+}
+.container #form_data input {
+  width: 100%;
+  padding: 13px 23px;
+  margin: 10px 0;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+.container #form_data #create_product {
+  background-color: #5E6821;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+  border-radius: 13px;
+  width: 100%;
+  margin-top: 10px;
+}
+.container #form_data #create_product:hover {
+  background-color: #3c430e;
 }/*# sourceMappingURL=main.css.map */

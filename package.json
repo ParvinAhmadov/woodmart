@@ -1,0 +1,24 @@
+{
+  "name": "woodmart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json --port 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParvinAhmadov/woodmart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParvinAhmadov/woodmart/issues"
+  },
+  "homepage": "https://github.com/ParvinAhmadov/woodmart#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1",
+    "nodemon": "^3.1.4"
+  }
+}
