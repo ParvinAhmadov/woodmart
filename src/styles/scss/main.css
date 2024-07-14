@@ -13,6 +13,23 @@ button {
   cursor: pointer;
 }
 
+#to-top {
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  border-color: #5E6821;
+  color: #5E6821;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
 .general-header {
   padding: 0% 10%;
 }
@@ -157,6 +174,20 @@ button {
 .products-text {
   padding: 0% 10%;
   margin-top: 4%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.products-text a {
+  background-color: #5E6821;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s ease;
+}
+.products-text a:hover {
+  background-color: #3c430e;
 }
 
 html,

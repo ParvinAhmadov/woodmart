@@ -1,5 +1,21 @@
 @use "../utils/variable" as *;
-
+#to-top{
+  bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    border-color:$hovercolor;
+    color: $hovercolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    
+}
 .general-header {
   padding: 0% 10%;
 
