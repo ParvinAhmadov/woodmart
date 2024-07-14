@@ -154,93 +154,6 @@ button {
   padding: 0px 5px;
 }
 
-.plants-menu {
-  padding: 0% 10%;
-  margin-top: 3%;
-}
-.plants-menu .plants-menu-content {
-  border-bottom: 2px solid #5E6821;
-  display: flex;
-  width: 1369px;
-  height: 524px;
-}
-.plants-menu .plants-menu-content .plants-menu-left {
-  display: flex;
-  align-items: center;
-  width: 302px;
-}
-.plants-menu .plants-menu-content .plants-menu-left ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  list-style: none;
-  font-size: 30px;
-}
-.plants-menu .plants-menu-content .plants-menu-left ul li {
-  display: flex;
-  align-items: center;
-  font-size: 40px;
-  color: #333333;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-.plants-menu .plants-menu-content .plants-menu-left ul li:hover {
-  color: #5E6821;
-}
-.plants-menu .plants-menu-content .plants-menu-left ul li i {
-  margin: 0px 0px 0px 10px;
-  font-size: 30px;
-  text-align: center;
-}
-.plants-menu .plants-menu-content .plants-menu-right {
-  padding: 0px 15px;
-  width: 1065px;
-  height: 482px;
-  border-left: 2px solid #5E6821;
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper {
-  width: 100%;
-  height: 100%;
-  cursor: grab;
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-content {
-  position: absolute;
-  transform: translateY(191%);
-  color: white;
-  left: 4%;
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-content h2 {
-  font-size: 36px;
-  font-weight: 900;
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-content p {
-  color: rgba(255, 255, 255, 0.8);
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-content button {
-  padding: 5px 20px;
-  background-color: #5E6821;
-  color: white;
-  border: none;
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-content button:hover {
-  background-color: #3c430e;
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper .swipper-wrapper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.plants-menu .plants-menu-content .plants-menu-right .swiper .swipper-wrapper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .products-text {
   padding: 0% 10%;
   margin-top: 4%;
@@ -258,6 +171,24 @@ body {
 .products-menu .swiper {
   width: 100%;
   height: 100%;
+}
+.products-menu .swiper .swiper-button-next:after,
+.products-menu .swiper .swiper-rtl .swiper-button-prev:after {
+  font-size: 17px;
+  border: 2px solid white;
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+}
+.products-menu .swiper .swiper-button-prev:after,
+.products-menu .swiper .swiper-rtl .swiper-button-next:after {
+  font-size: 17px;
+  border: 2px solid white;
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
 }
 .products-menu .swiper .swiper-wrapper .products-content {
   margin-top: 5px;
@@ -305,7 +236,7 @@ body {
   display: none;
 }
 .products-menu .swiper .swiper-slide {
-  cursor: pointer;
+  cursor: grab;
   transition: 0.3s ease;
   width: 338px;
   height: 515px;
@@ -333,4 +264,103 @@ body {
 .products-menu .swiper .swiper-slide .products-swipper-btn button:hover {
   background-color: black;
   color: white;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.plants-menu {
+  padding: 0% 10%;
+  margin-top: 3%;
+}
+.plants-menu .plants-menu-content {
+  border-bottom: 2px solid #5E6821;
+  display: flex;
+  width: 1369px;
+  height: 524px;
+}
+.plants-menu .plants-menu-content .plants-menu-left {
+  display: flex;
+  align-items: center;
+  width: 302px;
+}
+.plants-menu .plants-menu-content .plants-menu-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  font-size: 30px;
+}
+.plants-menu .plants-menu-content .plants-menu-left ul li {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color: #333333;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.plants-menu .plants-menu-content .plants-menu-left ul li:hover {
+  color: #5E6821;
+}
+.plants-menu .plants-menu-content .plants-menu-left ul li i {
+  margin: 0px 0px 0px 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.plants-menu .plants-menu-content .plants-menu-right {
+  padding: 0px 15px;
+  width: 1065px;
+  height: 482px;
+  border-left: 2px solid #5E6821;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper {
+  width: 100%;
+  height: 100%;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  cursor: grab;
+  align-items: center;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide .swiper-slide-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide .swiper-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 3%;
+  top: 54%;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide .swiper-content h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: start;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide .swiper-content p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: start;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide .swiper-content button {
+  padding: 5px 20px;
+  background-color: #5E6821;
+  color: white;
+  border: none;
+  width: 130px;
+  transition: 0.3s ease;
+}
+.plants-menu .plants-menu-content .plants-menu-right .swiper .swiper-wrapper .swiper-slide .swiper-content button:hover {
+  background-color: #3c430e;
 }/*# sourceMappingURL=main.css.map */

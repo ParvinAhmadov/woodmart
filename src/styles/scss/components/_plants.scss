@@ -1,0 +1,104 @@
+@use "../utils/variable" as *;
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.plants-menu {
+  padding: 0% 10%;
+  margin-top: 3%;
+
+  .plants-menu-content {
+    border-bottom: 2px solid $hovercolor;
+    display: flex;
+    width: 1369px;
+    height: 524px;
+
+    .plants-menu-left {
+      display: flex;
+      align-items: center;
+      width: 302px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        font-size: 30px;
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 40px;
+          color: #333333;
+          transition: 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            color: $hovercolor;
+          }
+          i {
+            margin: 0px 0px 0px 10px;
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .plants-menu-right {
+      padding: 0px 15px;
+      width: 1065px;
+      height: 482px;
+      border-left: 2px solid $hovercolor;
+      .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            cursor: grab;
+            align-items: center;
+            .swiper-slide-img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            .swiper-content {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              left: 3%;
+              top: 54%;
+              h2 {
+                font-size: 36px;
+                font-weight: 900;
+                color: #ffffffcc;
+                text-align: start;
+              }
+
+              p {
+                color: #ffffffcc;
+                text-align: start;
+              }
+              button {
+                padding: 5px 20px;
+                background-color: $hovercolor;
+                color: white;
+                border: none;
+                width: 130px;
+                transition: 0.3s ease;
+                &:hover {
+                  background-color: #3c430e;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

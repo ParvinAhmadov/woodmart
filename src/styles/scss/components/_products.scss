@@ -1,125 +1,118 @@
-
 @use "../utils/variable" as *;
-.products-text{
-    padding: 0% 10%;
-    margin-top: 4%;
+.products-text {
+  padding: 0% 10%;
+  margin-top: 4%;
 }
 html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+body {
+  position: relative;
+  height: 100%;
+}
 
-.products-menu{
-padding: 2% 1%;
-.swiper {
-   
-  .swiper-wrapper{
-    .products-content{
+.products-menu {
+  padding: 2% 1%;
+  .swiper {
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+      font-size: 17px;
+      border: 2px solid white;
+      padding: 15px;
+      background-color: white;
+      border-radius: 50%;
+      color: black;
+    }
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+      font-size: 17px;
+      border: 2px solid white;
+      padding: 15px;
+      background-color: white;
+      border-radius: 50%;
+      color: black;
+    }
+    .swiper-wrapper {
+      .products-content {
         margin-top: 5px;
         display: flex;
         gap: 5px;
         flex-direction: column;
-        h3{
-            font-size: 20px;
-            color: #333333;
-            margin: 0;
-
+        h3 {
+          font-size: 20px;
+          color: #333333;
+          margin: 0;
         }
-        p{
-            margin: 0;
-            i{
-                color: orange;
-                font-size: 14px;
-                }
+        p {
+          margin: 0;
+          i {
+            color: orange;
+            font-size: 14px;
+          }
         }
-        span{
-            font-size: 20px;
-            color: $hovercolor;
-            font-weight: 600;
+        span {
+          font-size: 20px;
+          color: $hovercolor;
+          font-weight: 600;
         }
-        .products-content-btn{
-            text-align: center;
-            background-color: $hovercolor;
-            padding: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            border: none;
-            transition: 0.3s ease;
-    
-                // &:hover{
-                //     span{
-                //         display: none;
+        .products-content-btn {
+          text-align: center;
+          background-color: $hovercolor;
+          padding: 10px;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          border: none;
+          transition: 0.3s ease;
 
-                //     }
-                //     p{
-                //     i{
-                //         display: flex;
-                //     }
+          span {
+            color: white;
+            font-size: 15px;
+            margin-bottom: 8px;
+          }
+          p {
+            margin-bottom: 3px;
 
-                //     }
-                // }
-
-            span{
-                color:white;
-                font-size: 15px;
-                margin-bottom: 8px;
-                // display: none;
+            i {
+              color: white;
+              display: none;
             }
-            p{
-                margin-bottom: 3px;
-          
-
-                
-                
-                i{
-                    color: white;
-                    display: none;
-                    
-                }
-            }
+          }
         }
+      }
     }
-  }
     width: 100%;
     height: 100%;
     .swiper-slide {
-        cursor: pointer;
-        transition: 0.3s ease;
+      cursor: grab;
+      transition: 0.3s ease;
 
-        &:hover{
-
-            .products-swipper-btn{
-                display: flex;
-            }
+      &:hover {
+        .products-swipper-btn {
+          display: flex;
         }
-        .products-swipper-btn{
-
-            display: none;
-            position: absolute;
-            // display: flex;
-            gap: 5px;
-            left: 60%;
-            top: 3%;
-            button{
-                border: none;
-                padding: 5px 5px;
-                transition: 0.3s ease;
-                &:hover{
-                    background-color: black;
-                    color: white;
-                }
-            }
-        }
-        width: 338px;
-        height: 515px;
-        text-align: center;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
+      .products-swipper-btn {
+        display: none;
+        position: absolute;
+        gap: 5px;
+        left: 60%;
+        top: 3%;
+        button {
+          border: none;
+          padding: 5px 5px;
+          transition: 0.3s ease;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+      width: 338px;
+      height: 515px;
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-
 }
