@@ -19,16 +19,13 @@ toTop.addEventListener("click", () => {
 
 
 new Swiper(".productsSwiper", {
-    slidesPerView: 4,
-    spaceBetween: 10,
+    slidesPerView: 5,
+    spaceBetween: 150,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
 });
-
-
-
 
 new Swiper(".menuSwiper", {
   slidesPerView: 1,

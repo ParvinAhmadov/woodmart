@@ -287,12 +287,22 @@ body {
   left: 60%;
   top: 3%;
 }
-.products-menu .swiper .swiper-slide .products-swipper-btn button {
+.products-menu .swiper .swiper-slide .products-swipper-btn a {
+  border: none;
+  padding: 5px 5px;
+  transition: 0.3s ease;
+  background-color: rgba(246, 246, 246, 0.731);
+}
+.products-menu .swiper .swiper-slide .products-swipper-btn a:hover {
+  background-color: black;
+  color: white;
+}
+.products-menu .swiper .swiper-slide .products-swipper-btn .delete-btn {
   border: none;
   padding: 5px 5px;
   transition: 0.3s ease;
 }
-.products-menu .swiper .swiper-slide .products-swipper-btn button:hover {
+.products-menu .swiper .swiper-slide .products-swipper-btn .delete-btn:hover {
   background-color: black;
   color: white;
 }

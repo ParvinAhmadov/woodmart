@@ -1,15 +1,39 @@
 {
   "data": [
     {
-      "id": "2b59",
+      "id": "6018",
       "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
       "name": "Golden Petra",
-      "price": "79"
+      "price": "79.00"
     },
     {
-      "id": "0910",
+      "id": "d199",
       "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "name": "salam",
+      "name": "Golden Petra",
+      "price": "79.00"
+    },
+    {
+      "id": "159c",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
+      "name": "Golden Petra",
+      "price": "79.00"
+    },
+    {
+      "id": "51e9",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
+      "name": "Golden Petra",
+      "price": "79.00"
+    },
+    {
+      "id": "7263",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
+      "name": "Golden Petra",
+      "price": "79.00"
+    },
+    {
+      "id": "5da6",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
+      "name": "Golden Petra",
       "price": "79.00"
     }
   ]

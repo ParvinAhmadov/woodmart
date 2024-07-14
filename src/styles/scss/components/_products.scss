@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  
   a{
     background-color:$hovercolor;
     padding: 10px 10px;
@@ -111,7 +112,17 @@ body {
         left: 60%;
         top: 3%;
         
-        button {
+        a {
+          border: none;
+          padding: 5px 5px;
+          transition: 0.3s ease;
+          background-color: rgba(246, 246, 246, 0.731);
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+        .delete-btn{
           border: none;
           padding: 5px 5px;
           transition: 0.3s ease;
