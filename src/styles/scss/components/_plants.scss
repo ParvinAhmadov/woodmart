@@ -1,4 +1,5 @@
 @use "../utils/variable" as *;
+@use "../utils/mixins" as *;
 
 html,
 body {
@@ -29,6 +30,7 @@ body {
         li {
           display: flex;
           align-items: center;
+
           font-size: 40px;
           color: #333333;
           transition: 0.3s ease;

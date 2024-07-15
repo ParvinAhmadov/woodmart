@@ -464,4 +464,344 @@ body {
 }
 .container #form_data #create_product:hover {
   background-color: #3c430e;
+}
+
+.shopping-text {
+  padding: 0% 10%;
+  margin-top: 4%;
+}
+
+.shopping-menu {
+  display: flex;
+  gap: 10px;
+  padding: 0% 10%;
+  margin-top: 2%;
+}
+.shopping-menu .shopping-video-cards {
+  display: flex;
+  gap: 10px;
+}
+.shopping-menu .shopping-video-cards .shopping-video-card {
+  position: relative;
+  overflow: hidden;
+  width: 443px;
+  height: 600px;
+}
+.shopping-menu .shopping-video-cards .shopping-video-card .shopping-card-video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shopping-menu .shopping-video-cards .shopping-video-card .shopping-card-video::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(86, 86, 86, 0.317);
+  pointer-events: none;
+  z-index: 1;
+}
+.shopping-menu .shopping-video-cards .card-video-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  color: white;
+  padding: 10px;
+  z-index: 2;
+}
+.shopping-menu .shopping-video-cards .card-video-text h5 {
+  font-size: 20px;
+  color: #faf8f8;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.shopping-menu .shopping-video-cards .card-video-text h3 {
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 35px;
+}
+.shopping-menu .shopping-video-cards .card-video-text a {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+.shopping-menu .shopping-video-cards .card-video-text a:hover {
+  text-decoration: underline;
+}
+
+.explore-menu {
+  margin-top: 3rem;
+  padding: 2% 3%;
+  background: linear-gradient(to bottom, #5f6921 60%, #F6F3ED 40%);
+}
+.explore-menu .explore-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 9%;
+}
+.explore-menu .explore-container .explore-container-title {
+  width: 49rem;
+  color: white;
+}
+.explore-menu .explore-container .explore-container-title h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 68px;
+}
+.explore-menu .explore-container .explore-container-title .title-flower,
+.explore-menu .explore-container .explore-container-title .title-plant,
+.explore-menu .explore-container .explore-container-title .title-last {
+  width: 145px;
+  height: 60px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.explore-menu .explore-container .explore-container-title .title-flower {
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-1.png.webp");
+  top: 10px;
+  left: calc(50% - 450px);
+}
+.explore-menu .explore-container .explore-container-title .title-plant {
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-2.png.webp");
+  top: 10px;
+  left: calc(50% - 150px);
+}
+.explore-menu .explore-container .explore-container-title .title-last {
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-3.png");
+  top: 10px;
+  right: calc(50% - 150px);
+}
+.explore-menu .explore-container .explore-cards {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.explore-menu .explore-container .explore-cards .explore-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 30rem;
+  width: 30rem;
+  padding: 2rem;
+  background-color: #d3e9d4;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.explore-menu .explore-container .explore-cards .explore-card .explore-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.explore-menu .explore-container .explore-cards .explore-card .explore-card-title h3 {
+  font-size: 26px;
+  word-wrap: break-word;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.explore-menu .explore-container .explore-cards .explore-card .explore-card-title .explore-card-title-img img {
+  width: 30px;
+  height: auto;
+}
+.explore-menu .explore-container .explore-cards .explore-card .explore-card-last {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #5f6921;
+  padding-top: 1rem;
+  gap: 2rem;
+}
+.explore-menu .explore-container .explore-cards .explore-card .explore-card-last .explore-card-last-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.explore-menu .explore-container .explore-cards .explore-card .explore-card-last .explore-card-last-title h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.explore-menu .explore-container .explore-cards .explore-card .explore-card-last .explore-card-last-title p {
+  margin: 0;
+  color: gray;
+  font-size: 16px;
+}
+.explore-menu .explore-container .explore-cards .explore-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49rem;
+  height: 30rem;
+  position: relative;
+}
+.explore-menu .explore-container .explore-cards .explore-card-right .explore-card-right-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.explore-menu .explore-container .explore-cards .explore-card-right .explore-card-right-video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.explore-menu .explore-container .explore-cards .explore-card-right .explore-card-right-video a {
+  font-size: 80px;
+  color: #5f6921;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.25s ease-in-out;
+}
+.explore-menu .explore-container .explore-cards .explore-card-right .explore-card-right-video a:hover {
+  opacity: 0.9;
+}
+
+.flowering-menu {
+  padding: 2% 5%;
+}
+.flowering-menu .flowering-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.flowering-menu .flowering-container .flowering-header-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1309px;
+  margin-bottom: 2rem;
+}
+.flowering-menu .flowering-container .flowering-header-text .flowering-text-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.flowering-menu .flowering-container .flowering-header-text .flowering-text-left h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+.flowering-menu .flowering-container .flowering-header-text .flowering-text-left p {
+  margin: 0;
+  color: gray;
+}
+.flowering-menu .flowering-container .flowering-header-text .flowering-text-right .flowering-text-right-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #5f6921;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.25s ease-in-out;
+}
+.flowering-menu .flowering-container .flowering-header-text .flowering-text-right .flowering-text-right-btn:hover {
+  background-color: #4a5a1b;
+}
+.flowering-menu .flowering-container .flowering-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card {
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease-in-out;
+  position: relative;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-img {
+  position: relative;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-img .flowering-img-icon {
+  position: absolute;
+  top: 17%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-img .flowering-img-icon button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.25s ease-in-out;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-img .flowering-img-icon button i {
+  font-size: 20px;
+  color: #333;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-img .flowering-img-icon button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-img:hover .flowering-img-icon {
+  opacity: 1;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text {
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text h5 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text .flowering-card-last-text-start {
+  display: flex;
+  gap: 0.2rem;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text .flowering-card-last-text-start i {
+  font-size: 14px;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text .flowering-card-last-text-start .gold {
+  color: #f5c518;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text h3 {
+  margin: 0.5rem 0;
+  font-size: 20px;
+  color: #5f6921;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text button {
+  cursor: pointer;
+  border: none;
+  background-color: #5f6921;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.25s ease-in-out;
+}
+.flowering-menu .flowering-container .flowering-cards .flowering-card .flowering-card-last-text button:hover {
+  background-color: #4a5a1b;
 }/*# sourceMappingURL=main.css.map */
