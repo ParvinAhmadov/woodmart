@@ -1,0 +1,129 @@
+@use "../utils/mixins" as *;
+@use "../utils/variable" as *;
+
+
+
+.woodmart-footer {
+  padding: 2% 14%;
+  background-color: #F6F3ED; 
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    border-bottom: 2px solid $green;
+    padding-bottom: 4rem;
+
+    .footer-container-left {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-right: 2rem;
+      border-right: 2px solid $green;
+
+      .footer-container-left-img img {
+        max-width: 100%; 
+        height: auto; 
+      }
+
+      .footer-container-left-text {
+        h3 {
+          font-size: 24px;
+          color: #333; 
+          font-weight: 600;
+          
+        }
+
+        p {
+          color: gray;
+          font-size: 14px;
+        }
+      }
+
+      .footer-container-left-form {
+        form {
+          display: flex;
+          gap: 0.5rem;
+          
+          input {
+            border: none;
+            outline: none;
+            width: 16rem;
+            padding: 8px 16px;
+            background-color: #E8E6DB;
+            border-radius: 4px; 
+          }
+
+          button {
+            cursor: pointer;
+            border: none;
+            color: white;
+            background-color: $green;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+              background-color: darken($green, 10%); 
+            }
+          }
+        }
+      }
+
+      .footer-container-left-logo {
+        ul {
+          display: flex;
+          gap: 1rem;
+          list-style: none;
+
+          li {
+            cursor: pointer;
+            color: $green;
+            font-size: 24px; 
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+              color: darken($green, 10%); 
+            }
+          }
+        }
+      }
+    }
+
+    .footer-container-right {
+      display: flex;
+      gap: 2rem;
+
+      .footer-container-right-start,
+      .footer-container-right-medium,
+      .footer-container-right-end {
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          font-size: 20px;
+
+          li {
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+
+            h3 {
+              font-size: 16px;
+              color: #333;
+              margin-bottom: 0.5rem;
+              font-weight: 900;
+              font-size: 27px;
+            }
+
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

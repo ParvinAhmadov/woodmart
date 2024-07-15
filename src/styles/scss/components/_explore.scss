@@ -1,3 +1,7 @@
+@use "../utils/mixins" as *;
+@use "../utils/variable" as *;
+
+
 .explore-menu {
     margin-top: 3rem;
     padding: 2% 3%;
@@ -142,15 +146,22 @@
   
             a {
               font-size: 80px;
-              color: #5f6921; 
+              color:white; 
               position: absolute;
               left: 50%;
               top: 50%;
+              font-size: 35px;
               transform: translate(-50%, -50%);
               transition: opacity 0.25s ease-in-out;
+              border: 3px solid white;
+              padding: 19px 29px;
+              border-radius: 50%;
+              transition: 0.3s ease;
   
               &:hover {
                 opacity: 0.9;
+                color: #5f6921;
+                border-color: #5f6921 ;
               }
             }
           }

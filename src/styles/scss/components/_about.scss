@@ -1,0 +1,89 @@
+@use "../utils/mixins"as *;
+@use "../utils/variable" as *;
+
+$green: #5f6921;
+
+.about-menu {
+  margin-top: 6rem;
+  padding: -1% 4.5%;
+  border-top: 2px solid $green;
+flex-direction: column;
+  display: flex;
+  gap: 2rem;
+
+  .about-container-left,
+  .about-container-right {
+    width: 1497px;
+    gap: 5rem;
+    display: flex;
+  }
+
+  .about-container-left {
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6%;
+
+    .about-container-left-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      h3 {
+        font-size: 26px;
+        color: $green;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px; 
+    }
+  }
+
+  .about-container-right {
+    .about-container-right-text {
+      display: flex;
+    flex-direction: column;
+      gap: 1rem;
+      margin-left: 10%;
+
+
+      h2 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 14px; 
+        color: gray;
+      }
+    }
+
+    .about-container-right-date {
+      .about-container-right-date-text {
+   
+        width: 800px;
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+
+        h3 {
+          font-size: 26px;
+          color: $green;
+        }
+
+        h2 {
+          font-size: 45px;
+          color: #bbbbbb; // Light gray color for the year
+        }
+      }
+    }
+  }
+}

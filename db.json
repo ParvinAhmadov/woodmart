@@ -1,40 +1,46 @@
 {
   "data": [
     {
-      "id": "6018",
-      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "name": "Golden Petra",
-      "price": "79.00"
-    },
-    {
-      "id": "d199",
-      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "name": "Golden Petra",
-      "price": "79.00"
-    },
-    {
-      "id": "159c",
-      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "name": "Golden Petra",
-      "price": "79.00"
-    },
-    {
-      "id": "51e9",
-      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "name": "Golden Petra",
-      "price": "79.00"
-    },
-    {
-      "id": "7263",
-      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "name": "Golden Petra",
-      "price": "79.00"
-    },
-    {
       "id": "5da6",
       "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
       "name": "Golden Petra",
       "price": "79.00"
+    },
+    {
+      "id": "4fc8",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-2-0-351x401.jpg",
+      "name": "Peperomia Obtisifioli",
+      "price": "66.00"
+    },
+    {
+      "id": "a8be",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-3-0-351x401.jpg",
+      "name": "Golden Petra",
+      "price": "88.00"
+    },
+    {
+      "id": "6346",
+      "image": " https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-7-0-351x401.jpg",
+      "name": "Golden Petra",
+      "price": "55.00"
+    },
+    {
+      "id": "0fca",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-10-0-351x401.jpg",
+      "name": "Pink Rubber",
+      "price": "99.00"
+    },
+    {
+      "id": "a2e1",
+      "image": " https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-7-0-351x401.jpg",
+      "name": "Golden Petra",
+      "price": "11.00"
+    },
+    {
+      "id": "4a69",
+      "image": " https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-7-0-351x401.jpg",
+      "name": "Berbuto Petra",
+      "price": "65.00"
     }
   ]
 }

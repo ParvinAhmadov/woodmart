@@ -1,0 +1,95 @@
+@use "../utils/variable" as *;
+@use "../utils/mixins" as *;
+
+
+
+.view-menu {
+  padding: 2% 4%;
+  background-color:#F6F3ED; 
+
+  .view-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid $green;
+
+    .view-container-header-title {
+        display: flex;
+      font-size: 22px;
+      margin-bottom: 1rem;
+      color: #333; 
+      font-weight: 900;
+    }
+
+    .view-cards {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+      gap: 5rem; 
+
+
+      .view-card {
+        width: 15rem;
+
+        .view-card-img {
+          cursor: pointer;
+          position: relative;
+          height: 15rem;
+          width: 15rem;
+          overflow: hidden;
+          border-radius: 8px; 
+
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:hover img {
+            transform: scale(1.05); 
+          }
+
+          .view-card-img-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            padding: 1rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+
+            .view-card-img-left,
+            .view-card-img-right {
+              color: white;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+            }
+
+            .view-card-img-left {
+              position: absolute;
+              bottom: 1rem;
+              left: 1rem;
+            }
+
+            .view-card-img-right {
+              position: absolute;
+              bottom: 1rem;
+              right: 1rem;
+            }
+          }
+
+          &:hover .view-card-img-content {
+            opacity: 1; 
+          }
+        }
+      }
+    }
+  }
+}

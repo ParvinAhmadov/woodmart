@@ -1,0 +1,186 @@
+@use "../utils/variable" as *;
+@use "../utils/mixins" as *;
+
+.articles-menu {
+  padding: 2% 4%;
+  background-color: #F6F3ED; 
+
+  .articles-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .articles-container-header-text {
+      padding-bottom: 2rem;
+      display: flex;
+      font-weight: 900;
+
+      h3 {
+        font-size: 2rem;
+        color: #333;
+      }
+    }
+
+    .articles-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-top: 2px solid $hovercolor;
+      border-bottom: 2px solid$hovercolor;
+
+      .articles-card {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        border-bottom: 1px solid #e3e3e3;
+        position: relative;
+        transition: box-shadow 0.3s ease-in-out;
+        border-radius: 8px;
+
+        &:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        .articles-card-img {
+          position: relative;
+          overflow: hidden;
+          border-radius: 8px;
+
+          img {
+            object-fit: cover;
+            height: 15rem;
+            width: 100%;
+            transition: transform 0.25s ease-in-out;
+            cursor: pointer;
+          }
+
+          &:hover img {
+            transform: scale(1.1); 
+          }
+
+          .articles-card-img-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.6); 
+
+            .articles-card-img-text-date {
+              background: white;
+              color: black;
+              padding: 5px;
+              text-align: center;
+
+              p {
+                margin: 0;
+                font-size: 0.75rem;
+                font-weight: 500;
+              }
+
+              span {
+                font-size: 1.75rem;
+                font-weight: bold;
+              }
+            }
+
+            .articles-card-img-text-btn {
+              button {
+                cursor: pointer;
+                border: none;
+
+                background-color: $hovercolor;
+                color: white;
+                padding: 5px;
+                border-radius: 4px;
+                font-size: 0.875rem;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                  background-color: #94ad07;
+                }
+              }
+            }
+          }
+        }
+
+        .articles-card-content {
+          padding: 1rem;
+
+          .articles-card-content-information {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+            color: gray;
+
+            .articles-card-content-information-left {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              span {
+                font-size: 0.9rem;
+              }
+
+              img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+              }
+            }
+
+            .articles-card-content-information-icon {
+              display: flex;
+              gap: 1rem;
+
+              i {
+                cursor: pointer;
+                font-size: 1.2rem;
+                transition: color 0.3s ease-in-out;
+
+                &:hover {
+                  color:$hovercolor; 
+                }
+              }
+            }
+          }
+
+          .articles-card-content-text {
+            h2 {
+              font-size: 38px;
+              font-weight: 600;
+              cursor: pointer;
+
+              &:hover {
+                opacity: 0.8; 
+              }
+            }
+          }
+        }
+      }
+      .articles-card-content-text-btn {
+        display: flex;
+        justify-content: center;
+
+        button {
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+          width: 150px;
+          color: white;
+          transition: background-color 0.3s ease-in-out;
+          background:$hovercolor;
+
+          &:hover {
+            background-color: #94ad07;
+          }
+        }
+      }
+    }
+  }
+}
